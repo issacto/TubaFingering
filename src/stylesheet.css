@@ -1,0 +1,289 @@
+.Board{
+    text-align: center;
+    background-color:rgb(17, 17, 20)  ;
+    color:aliceblue;
+    min-height:100%;
+    max-height:100%;
+    width:100%;
+    position:fixed
+}
+.landPageBody {
+    min-height:81vh;
+    max-height:81vh;
+    justify-content: center;
+    color:aliceblue;
+    display: flex;
+    background:linear-gradient(150deg, #090B3C ,rgb(24, 22, 49)  58%,rgb(20, 18, 39)  40%, rgb(17, 17, 20));
+  }
+.color{
+    color:rgb(17, 17, 20)
+
+}
+.navigationbar{
+    top: 0; /* Position the navbar at the top of the page */
+   /* Full width */
+    padding: 0.5rem;
+    padding-top: 1rem;
+    height:7vh
+}
+.footer{
+    bottom:0;
+    height: 7vh;
+    padding-top: 1.2%;
+}
+.landPageHeader{
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 3%;
+    font-size: 5vh;
+    
+}
+
+.leftContainer{
+
+    text-align: left;
+    padding-top: 5%;
+    width: 100%;
+
+}
+.middleContainer{
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    padding-top: 5%;
+    
+}
+.rightContainer{
+    width: 90%;
+}
+.upperContainer {
+    flex: 0 0 100%;
+    max-height: 40%;
+    min-height: 40%;
+    max-width: 100%;
+    padding: .5em;
+    padding-top: 1%;
+    overflow: hidden;
+}
+.lowerContainer {
+    flex: 0 0 100%;
+    max-height: 60%;
+    min-height: 60%;
+    max-width: 100%;
+    text-align: center;
+    padding: .5em;
+    padding-top: 22%;
+    
+    overflow: hidden;
+}
+
+.tubaLogo{
+    width:65%;
+}
+.startButton{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+  }
+  .startButton::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(87, 87, 170);
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+  .startButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(black, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .startButton .hover {
+    color: black;
+    
+  }
+.main{
+    min-height:81vh;
+    background-color:#090B3C ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.mainTable{
+    width:98%;
+    table-layout : fixed;
+    padding:1%;
+    margin-left: auto;
+    margin-right: auto;
+    color:aliceblue;
+    font-size: 80px;
+    border-spacing:2.2vh;
+}
+.maintableElement{
+    background-color: white;
+    height: 20rem;
+}
+.maintableElementKeys{
+    background-color: white;
+    height: 17rem;
+}
+
+
+.leftContainerForReady{
+
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    padding:2vh;
+    padding-left:6vh;
+
+}
+.middleContainerForReady{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left:3vh;
+    height: 20rem;
+    
+}
+.rightContainerForReady{
+    width: 70%;
+    text-align: center;
+
+}
+
+.timerContainer{
+    justify-content: center;
+    align-items : center
+}
+
+.timer {
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+.text {
+    color: #aaa;
+    font-size: 5vh;
+}
+  
+.value {
+    font-size: 6vh;
+}
+
+.leftSide{
+    position:fixed;
+    top:13vh;
+    left:7vh;
+    color: white
+
+}
+
+.middleGameContainer{
+    text-align: center;
+    justify-content: center;
+}
+.leftGameContainer{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rightGameContainer{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.resultMainPart{
+    min-height:81vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:#090B3C ;
+}
+.resultHeader{
+    font-size: 5vh;
+
+}
+.resultButton{
+    background-color: rgb(87, 87, 170);
+    font-size: 3vh;
+    border-radius:4px;
+    color:azure;
+    margin-left: 0.4vh ;
+    padding: 1vh;
+}
+.resultTable{
+  width:75%;
+  padding:2%;
+  table-layout : fixed;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 4vh;
+  display: block;
+  overflow-y: auto;
+  table-layout: fixed;
+  max-height: 70vh;
+  border-spacing:0.8vh;
+
+}
+table.resultTable td{
+
+}
+table.resultTable th{
+    font-size: 3vh;
+    color:rgb(87, 87, 170);
+    
+  
+  }
+.displayScore{
+    font-size: 5vh;
+}
+
+.smallDescription{
+    font-size: 3vh;
+    margin-top: 1vh;
+    color:rgb(170, 170, 170)
+
+}
+.difficultyDescription{
+    font-size: 3vh;
+    margin-top: 1.3vh;
+    color: rgb(51, 48, 48)
+}
+
+
+.footerWords{
+    font-size: 3vh;
+}

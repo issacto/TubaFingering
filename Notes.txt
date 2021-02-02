@@ -1,0 +1,5 @@
+Missing:
+1. Notes Display
+2. Bb/Eb/F Tuba
+3. Result screen
+4. Game screen display results; react-score-indicator
