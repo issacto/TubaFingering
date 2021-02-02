@@ -89,7 +89,7 @@ export default class ReadyPage extends Component{
         console.log(tempClickedNotes,",  NOtes")
         //Check Answer
         setTimeout(()=>{ 
-        if(JSON.stringify(tempClickedNotes)==JSON.stringify(this.state.tubaChosenMap.get(this.state.notesArray[this.state.noteIndicator]))){
+        if(JSON.stringify(tempClickedNotes.sort())==JSON.stringify(this.state.tubaChosenMap.get(this.state.notesArray[this.state.noteIndicator]).sort())){
             this.setState({correctAnsEntered:true},
             this.recordCorrectAnswer(this.state.notesArray[this.state.noteIndicator])
             )
