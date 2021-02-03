@@ -6,6 +6,7 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import CorrectLogo from "../Images/AnswerResponse/check.svg";
 import WrongBoardLogo from "../Images/AnswerResponse/wrong.svg";
 import Loader from "../components/loader";
+import FinishLoader from "../components/finishLoader"
 
 export default class ReadyPage extends Component{
     constructor(props) {
@@ -27,7 +28,8 @@ export default class ReadyPage extends Component{
             tubaChosenMap: getMap(this.props.location.state[0]),
             correctNotes:[],
             incorrectNotes:[],
-            loading: true
+            loading: true,
+            finished:false,
 
         }
         console.log(this.props.location.state[1])
@@ -126,9 +128,13 @@ export default class ReadyPage extends Component{
         this.setState({totalIncorrectAnsEntered: this.state.totalIncorrectAnsEntered+1});
         //incorrectAnswered+=1
     }
+    setFinish =isFinished=>{
+        this.setState({finished:isFinished})
+    }
 
     render() {
         if (this.state.loading) return <Loader />;
+        if (this.state.finished) return <FinishLoader />;
 
         return(
             
@@ -165,7 +171,11 @@ export default class ReadyPage extends Component{
                             this.realSetIndicator();
 
                             if(this.state.noteIndicator==this.state.noOfQuestions-1){
-                                setTimeout(()=>{ this.nextPage()},300)
+                                setTimeout(()=>{ 
+                                    this.setFinish(true);
+                                    setTimeout(()=>{ this.setFinish(false);this.nextPage(); },3000);
+                                },300)
+                                
                             }
                             console.log("finished") // repeat animation in 1.5 seconds
                             return [true, 500]
