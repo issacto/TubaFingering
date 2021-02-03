@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {keyMapping, difficultyMapping} from "../components/hashMap"
-import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 import { AwesomeButtonProgress } from 'react-awesome-button';
 import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss'
 import styles from 'react-awesome-button/src/styles/themes/theme-bojack';
@@ -40,6 +40,11 @@ export default class ReadyPage extends Component {
                     <li><h2 style={{color:"white"}}>Press U, I, O, P, /space/ for the first, second, third, fourth and fifth valve respectively</h2></li>
                     <li><h2 style={{color:"white"}}>Do not click anything if no valve is needed eg Bb for Bbtuba</h2></li>
                     <li><h2 style={{color:"white"}}>Range from f1 (Low F) to F3 (High F)</h2></li>
+                    <li>
+                    <Link to="/documentationPage" className="col s5 brand-logo center black-text">
+                        <h2 style={{color:"white"}}>Full Documentation </h2>
+                    </Link>
+                    </li>
                     
                     </ul>
                     </div>

@@ -148,7 +148,7 @@ export const EbTubaMap= new Map([
     ["D3",["i"]],
     ["D#3",[]],
     ["E3",["i"]],
-    ["F3",[]] ])
+    ["F3",["p"]] ])
 
 export const FTubaMap= new Map([
     ["F1",[]],

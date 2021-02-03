@@ -258,15 +258,33 @@
   border-spacing:0.8vh;
 
 }
+.documentationTable{
+    width:85%;
+    padding:2%;
+    table-layout : fixed;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing:0.8vh;
+    font-size: 4vh;
+    display: block;
+    overflow-y: auto;
+    table-layout: fixed;
+    max-height: 70vh;
+  
+  }
+table.documentationTable th{
+    font-size: 5vh;
+    color:white;
+    padding-bottom: 2vh;
+}
+
 table.resultTable td{
 
 }
 table.resultTable th{
     font-size: 3vh;
     color:rgb(87, 87, 170);
-    
-  
-  }
+}
 .displayScore{
     font-size: 5vh;
 }

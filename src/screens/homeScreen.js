@@ -59,6 +59,8 @@ export default class HomePage extends Component {
                             >
                            <p style={{fontSize:"3vh"}}>Start </p>
                         </AwesomeButton>
+
+                        <p style={{marginTop:"4vh", fontSize:"2vh",color:"grey"}}>{"<"}, {">"} , {"<"}space{">"}, {"<"}enter{">"} enabled</p>
                         {/*<button className="startButton" onClick={this.nextPage}>
                         Start Game
                         </button>*/}

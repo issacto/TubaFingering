@@ -10,6 +10,7 @@ import ReadyPage from "./screens/readyScreen";
 import NavigationBar from "./components/navigationbar";
 import Footer from "./components/footer";
 import GamePage from "./screens/gameScreen";
+import DocumentationPage from "./screens/documentationScreen"
 import "./stylesheet.css";
 import history from "./history";
 
@@ -27,6 +28,7 @@ function App() {
          <Route path="/resultPage" component={ResultPage} exact />
          <Route path="/readyPage" component={ReadyPage} exact />
          <Route path="/gamePage" component={GamePage} exact />
+         <Route path="/documentationPage" component={DocumentationPage} exact />
          
          </Switch>
          <Footer/>
