@@ -5,9 +5,9 @@ function ShowDetail() {
   return (
     <div className="main">
         <div className="loader center">
-        <i className="fa fa-cog fa-6x fa-spin fa-fw" style={{color:"rgb(112,128,144)"}} />
+        <i className="fa fa-cog fa-6x fa-spin fa-fw" style={{color:"white"}} />
         </div>
-        <p style={{color:"rgb(112,128,144)", fontSize:"7vh",marginLeft:"1vh"}}> loading...</p>
+        <p style={{color:"white", fontSize:"7vh",marginLeft:"1vh"}}> loading...</p>
     </div>
   );
 }
