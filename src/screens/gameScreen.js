@@ -5,6 +5,7 @@ import  {NotesArray,NotesDisplayMap,getMap} from "../components/notes";
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import CorrectLogo from "../Images/AnswerResponse/check.svg";
 import WrongBoardLogo from "../Images/AnswerResponse/wrong.svg";
+import Loader from "../components/loader";
 
 export default class ReadyPage extends Component{
     constructor(props) {
@@ -25,17 +26,30 @@ export default class ReadyPage extends Component{
             tubaChose:this.props.location.state[0],
             tubaChosenMap: getMap(this.props.location.state[0]),
             correctNotes:[],
-            incorrectNotes:[]
+            incorrectNotes:[],
+            loading: true
 
         }
         console.log(this.props.location.state[1])
         //10questions
         //const size = 10
+        
+        
+    }
+    sleep = (milliseconds) => {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+      };
+    wait = async (milliseconds = 2000) => {
+        await this.sleep(milliseconds);
         for(var i =0;i<this.state.noOfQuestions;i++){
             var randomIndex = Math.floor(Math.random() * (NotesArray.length-1));
             this.state.notesArray.push(NotesArray[randomIndex])
         }
-        
+        this.setState({ loading: false})
+      };
+    componentDidMount() {
+        this.wait(2000);
+        //this.fetchGitHub();
     }
     nextPage =()=>{
         this.props.history.push("/resultPage",
@@ -114,8 +128,8 @@ export default class ReadyPage extends Component{
     }
 
     render() {
+        if (this.state.loading) return <Loader />;
 
-           
         return(
             
             <div className = "main">
