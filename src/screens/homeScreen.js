@@ -33,10 +33,10 @@ export default class HomePage extends Component {
                     </div>
 
                     <div className= "middleContainer"> 
-                       <p className="landPageHeader">
-                           The first tuba fingering practicing website.
-                           <br/> <br/>Choose your tuba's key, valves and difficulty
-                        </p> 
+                           <h1 className="landPageHeader">The first tuba fingering practicing website.</h1>
+                           <h2 className="landPageHeader">
+                            <br/>Choose your tuba's key, valves and difficulty
+                        </h2> 
                     </div>
                     <div className= "rightContainer">
                         <div className="upperContainer">
