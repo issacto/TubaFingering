@@ -13,12 +13,19 @@ import GamePage from "./screens/gameScreen";
 import DocumentationPage from "./screens/documentationScreen"
 import "./stylesheet.css";
 import history from "./history";
-
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router history={history}>
     <div className="Board"> 
+
+      <Helmet>
+        <html lang="en" />
+        <title>Tuba Fingering</title>
+        <meta name="description" content="Tuba fingering practice website" />
+        <meta name="theme-color" content="#E6E6FA" />
+      </Helmet>
         <NavigationBar/>
          <Switch>
          <Route path="/" component={HomePage} exact />
