@@ -4,12 +4,13 @@ Link: https://tubafingering.netlify.app
 <br/>Author: Issac To
 <hr/>
 
-## 1. Demo
+## 1. 💻 Demo
 | Landing         | Demo           | 
 | ------------- |:-------------:| 
 | <img src="asset/intro.gif" backgroundColor= white width=100%/>   | <img src="asset/demo.gif" width=100%/> |
 
 <br/>
+
 1. Choose a key, valve, level of difficulty (time allowed for each question), and number of questions
 
 2. Familiar yourself with the designated fingering
