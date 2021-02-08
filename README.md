@@ -13,7 +13,7 @@ Link: https://tubafingering.netlify.app
 
 1. Choose a key, valve, level of difficulty (time allowed for each question), and number of questions
 
-2. Familiar yourself with the designated fingering
+2. Familiarize yourself with the designated fingering
 <br/>https://tubafingering.netlify.app/documentationPage
 
 3. Play 
