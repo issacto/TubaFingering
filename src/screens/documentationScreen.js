@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import KeyboardEventHandler from 'react-keyboard-event-handler';
 import  {NotesArray,NotesDisplayMap,getMap} from "../components/notes";
 
 
@@ -15,9 +14,7 @@ export default class DocumentationPage extends Component {
             FMap:getMap("F (5 values)"),
         };
     }
-    nextPage=()=>{
-        this.props.history.push({ pathname: "/questionPage", state: [this.props.location.state,this.state.indicator]} );
-    }
+
     render() {
         return(
             <div className = "main">
