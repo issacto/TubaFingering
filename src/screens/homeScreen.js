@@ -10,6 +10,7 @@ import { AwesomeButton } from "react-awesome-button";
 import AwesomeButtonStyles from "react-awesome-button/src/styles/styles.scss";
 import styles from 'react-awesome-button/src/styles/themes/theme-indigo';
 import KeyboardEventHandler from 'react-keyboard-event-handler';
+import { Helmet } from "react-helmet";
 
 export default class HomePage extends Component {
     constructor(props) {
@@ -21,6 +22,10 @@ export default class HomePage extends Component {
     render() {
         return(
                 <div class="landPageBody"> 
+                <Helmet>
+                    <title>{"Tuba Fingering | Music Education | Game — Tuba Fingering Practice  - Tuba Fingering"}</title>
+                    <meta name="description" content={"A website for you to practice tuba fingering. Tuba keys include Bb, C, Eb, and F."} />
+                </Helmet>
                  <KeyboardEventHandler
                     handleKeys={['enter','space']}
                     onKeyEvent={(key, e) =>{ 
